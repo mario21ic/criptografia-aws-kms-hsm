@@ -25,6 +25,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.sendall(cipher_text)
     data = s.recv(1024)
 
-data = cipher_suite.decrypt(data)
-print(f"Received from Server: {data!r}")
+plain_text = cipher_suite.decrypt(data)
+print(f"Received from Server: {plain_text!r}")
 

@@ -30,8 +30,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             else:
                 #print("data", data)
                 #print(f"Received from Client: {data!r}")
-                data = cipher_suite.decrypt(data)
-                print(f"Received from Client: {data!r}")
+                plain_text = cipher_suite.decrypt(data)
+                print(f"Received from Client: {plain_text!r}")
 
             #conn.sendall(data) # reply
             #conn.sendall(text)
