@@ -37,5 +37,3 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             #conn.sendall(text)
             conn.sendall(cipher_text)
 
-#print(f"Received from Client: {data!r}")
-

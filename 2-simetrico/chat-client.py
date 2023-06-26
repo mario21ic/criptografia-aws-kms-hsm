@@ -27,4 +27,3 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 plain_text = cipher_suite.decrypt(data)
 print(f"Received from Server: {plain_text!r}")
-
